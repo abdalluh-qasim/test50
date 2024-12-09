@@ -1,0 +1,229 @@
+/* الأساسيات */
+body {
+    font-family: Arial, sans-serif;
+    background-color: linear-gradient(45deg, #55b5d3, #00457c);
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+/* تخصيص النص داخل رأس الصفحة */
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-around; /* توزيع العناصر بين اليمين واليسار */
+    background: linear-gradient(-45deg, #88d5ff, #fc2525, #0b0089, #1231fc);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    padding: 0px;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    position: relative;
+    text-align: center;
+
+    border-bottom: 1px solid #0b0089; /* اللون والسُمك */
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {  
+    font-family: "Amiri", serif;
+font-size: 110%;
+
+
+}
+
+
+
+
+
+header p {  
+      font-family: "Katibeh", serif;
+font-size: 200%;
+margin-top: -15px;
+}
+header p:hover {
+    color: 
+    
+    
+
+    
+    
+    #cfcbcb; /* تغيير لون النص عند التمرير عليه */
+    transform: scale(1.107); /* تكبير النص عند التمرير عليه */
+    transition: all 1.2s ease; /* تأثير التحول بشكل ناعم */
+}
+header h1:hover {
+    color: 
+    
+    
+
+    
+    
+    #cfcbcb; /* تغيير لون النص عند التمرير عليه */
+    transform: scale(1.17); /* تكبير النص عند التمرير عليه */
+    transition: all 1.2s ease; /* تأثير التحول بشكل ناعم */
+     
+
+}
+
+
+
+
+
+
+/* تخصيص الشعار */
+header .logo {
+    display: flex;
+    align-items: center; /* محاذاة عمودية */
+    justify-content: center; /* محاذاة أفقية */
+    
+
+}
+
+header .logo-left img, header .logo-right img {
+    max-width: 80px;
+    border-radius: 50%;
+    
+    
+    transition: transform 0.7s ease, box-shadow 0.3s ease;
+margin-left: auto;
+
+}
+
+header .logo-left img:hover, header .logo-right img:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* الشعار الأيسر */
+header .logo-left {
+    display: flex;
+    justify-content:left;
+}
+
+/* الشعار الأيمن */
+header .logo-right {
+    display: flex;
+    justify-content:right;
+}
+
+
+
+
+main {
+    padding: 2rem;
+    margin-top: 10px;
+
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #e5e7cb;
+    border-radius: 8px;
+    max-width: 300px;
+    padding: 1rem;
+    
+    font-family: "Readex Pro", sans-serif;
+text-align: center;
+    
+    
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.265);
+}
+
+.news-item img {
+    
+
+    
+width: 100%;
+    
+    
+
+   
+height: auto;
+    
+    
+border-radius: 8px;
+}
+
+.news-item h2 {
+    
+   
+font-size: 1.2rem;
+    color: #ee3131;
+    margin: 1rem 0 0.5rem;
+}
+
+.news-item p {
+    font-size: 1rem;
+    
+   
+color: #555;
+    
+   
+margin-bottom: 1rem;
+}
+
+
+
+.details-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ee3131;
+    ;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.details-button:hover {
+    background-color: #960303;
+}
+
+body{ 
+background-color:rgb(215, 216, 212)
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ee3131    ;
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: "Katibeh", serif;
+}
+
+footer p  {
+
+    text-align: center;
+    padding: 5px;
+    color: #ffffff
+
+    margin-top: 20px;
+    font-family: "Katibeh", serif;
+font-size:40px 
+
+}
+
+.news-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: scale(1.009);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
